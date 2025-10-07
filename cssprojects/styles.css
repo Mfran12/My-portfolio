@@ -1,0 +1,29 @@
+/* hover effect 2: grayscale to color fade */
+.hoover-two:hover{
+    filter: grayscale(100%);
+    transition: filter 0.4s, transform 0.3s; /* smoothly animates the filter (gray) and movement*/
+
+}
+
+
+.hover-three:hover{
+    transform: scale(1.65); /* slightly enlarges the img hoover*/
+    opacity: 0.5;
+}
+
+
+.gallery-img{
+    width: auto;
+    height: 50px;
+    object-fit: auto;
+    border-radius: auto;
+    transition:auto;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
