@@ -1,0 +1,163 @@
+.body {
+  background-color: #232946;
+  color: #fffffe;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.style1{
+ background: #eebbc3; 
+border-radius:8px; 
+padding:0.5rem 1rem;
+}
+
+.style2fortext{
+    background: #121629;
+    text-align: center; 
+    font-size:1rem; 
+    margin:50px; 
+    color:#fffffe;
+    letter-spacing: 2px;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background: #232946;
+  color: #eebbc3;
+  border-radius: 16px 16px 0 0;
+}
+
+nav a {
+    color: #23294d;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: bold;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* different fonts */
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    border: 1px #272EF5;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+ul {
+    list-style-position: inside;
+}
+
+/* Project 1: Buttons */
+button {
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-hover:hover {
+    background: lightskyblue;
+}
+
+.btn-glow {
+    background: purple;
+    color: white;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 10px purple;
+}
+
+/* Project 2: Photo Gallery */
+.gallery {
+    display: flex; /* Aligns images in a horizontal line */
+    flex-wrap: wrap; /* Moves images to the next line if there isn't enough space */
+    gap: 50px; /* Adds space between each image */
+    justify-content: center;
+}
+
+.gallery img {
+    width: 180px; /* Sets each image's width */
+    height: 120px; /* Sets each image's height */
+    object-fit: cover; /* Ensure the image filles the box without distortion */
+    border-radius: 6px; /* Rounds the image corners slightly */
+    transition: all 0.3s; /* Smoothly animates changes on hover */ 
+}
+
+/* Hover Effect 1: Rotate and Dropshadow */
+.hover-one:hover {
+    transform: rotate(360deg) scale(1.65); /* Rotates the image by 5 degrees and enlarges slightly */
+    box-shadow: 0 8px 15px gray; /* Adds a soft shadow behind the image (when hovered) */
+    opacity: 1; /* Keeps full opacity throughout transition */
+}
+
+/* Hover Effect 2: Grayscale to Color Fade */
+.hover-two:hover {
+    filter: grayscale(100%); /* Starts the image in black and white */
+    transition: filter 0.4s, transform 0.3s; /*Smoothly animates both filter (gray) and movement */
+    transform: scale(1.65); /* Slightly enlarges the image */
+}
+
+/* Hover Effect 3: Scale and Fade */
+.hover-three:hover {
+    transform: scale(1.65); /* Slightly enlarges image on hover */
+    opacity: 0.5; /* Makes the image slightly transparent */
+}
+
+/* Project 3: Styled Quote Box */
+.quote-section{
+    text-align: center; /* Centers all text and elements inside the section */
+    max-width: 30%; /* Limits the section's width to 30% of the page */
+}
+
+.quote-section h3{
+    color: #dad5ce; /* Changes the H3 text to a dark earthy brown */
+    font-family: 'Merriweather', serif; /* Uses Merriweather and the classic serif font for a refined look */
+    margin-bottom: 15px; /* Adds space below the heading */
+    text-transform: uppercase; /* Makes all heading 3 letters uppercase */
+    letter-spacing: 1px; /* Adds small spacing between letters for readability/cool factor*/
+}
+/* Main quote box styling */
+.quote-box{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Uses a clean, modern sans-serif font for the quote text */
+    font-style: italic; /* Italicizes text to make it look like an actual quote */
+    background-image: linear-gradient(135deg, #d9cbb4, #b7a68f), url("https://www.transparenttextures.com/patterns/scribble-light.png"); /* Combines a soft gradient with a subtle textured overlay */
+    background-blend-mode: multiply; /* Blends the texture softly into the color */
+    padding: 50px 10px; /* Adds inner spacing around the quote */
+    border-left: 6px solid #534b43; /* Adds a thick, dark brown stripe on the left */
+    border-radius: 50px; /* Rounds the corners slightly for a softer look */
+    box-shadow: 0 4px 10px rgb(63, 54, 54); /* Adds a light shadow for depth */
+    color: #1b1b1a; /* Sets the quote text to a charcoal gray */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.quote-box:hover{
+    transform: translateY(-4px); /* Slightly lift the box when hovered */
+    box-shadow: 0 6px 14px gray; /* Makes the shadow deeper to enhance the lift */
+    background-image: linear-gradient(135deg, #b7a68f, #d9cbb4), url("https://www.transparenttextures.com/patterns/scribble-light.png"); /* Reverses the gradient colors for a dynamic effect */    
+}
+
+.quote-box cite{
+    display: block;
+ /* Makes the citation appear on its own line */
+    margin-top: 12px; /* adds space above the author's name */
+    font-style: normal; /* Removes italics to contrast the quote text */
+    font-weight: bold; /* Makes the author's name stand out by making it bold */
+    color: #324d3c; /*Sets a muted olive-green tone for the author name */
+    text-align: right; /* Aligns the author's name to the right edge */
+    letter-spacing: 0.5px; /* Adds small spacing between letters for balance */
+}
