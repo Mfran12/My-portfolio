@@ -161,3 +161,52 @@ button {
     text-align: right; /* Aligns the author's name to the right edge */
     letter-spacing: 0.5px; /* Adds small spacing between letters for balance */
 }
+
+.box1 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+  padding: 35px 25px;
+  width: 220px;
+  background:#eebbc3;
+  color: #f7f7f7;
+  font-size: 20px;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  border-radius: 10px;
+  border: 2px solid #f7c873;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.box2 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+  padding: 35px 25px;
+  width: 220px;
+  background:#eebbc3;
+  color: #f7f7f7;
+  font-size: 20px;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  border-radius: 10px;
+  border: 2px solid #f7c873;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.box3 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+  padding: 20px 20px;
+  width: 220px;
+  background:#eebbc3;
+  color: #f7f7f7;
+  font-size: 20px;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  border-radius: 10px;
+  border: 2px solid #f7c873;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
