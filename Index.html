@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <li class="style3 box1">
+                <a href="https://www.instagram.com/_m_ig_uel/" target="_blank" rel="noopener noreferrer"
+                    style="color:#232946; text-decoration:none; font-weight:500;">Where to know more about me</a>
+            </li>
+            <li class="style3 box2">
+                <a href="https://www.bestlaptop.deals/" target="_blank" rel="noopener noreferrer"
+                    style="color:#232946; text-decoration:none; font-weight:500;">Favorite Site for Laptops</a>
+            </li>
+            <li class="style3 box3">
+                <a href="https://earthroulette.com/" target="_blank" rel="noopener noreferrer"
+                    style="color:#232946; text-decoration:none; font-weight:500;">Generate Places to Visit</a>
+            </li>
+
+            <li class="style3 box4">
+                <a href="..cssprojects/index.html" target="_blank" rel="noopener noreferrer" style="color:#232946; text-decoration:none; font-weight:500;">CSS
+                    Projects</a>
+            </li>
+
+            <li class="style3 box4">
+                    <a href="..ContactMes/index.html" target="_blank" rel="noopener noreferrer" style="color:#232946; text-decoration:none; font-weight:500;">Contact Me</a>
+            </li>
+        </nav>
+    </header>
+
+    <section>
+        <h2> Introduction to the page </h2>
+        <p> This is a simulation of a contact page this is a simply a simulation does not work</p>
+    </section>
+
+    <section>
+        <form class="contact-form">
+            <h2> Contact Me</h2>
+            <label for="name"> Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <label for="email">Email: *</label>
+            <input type="email" id="email" placeholder="JohnDoe@gmail.com" required>
+
+            <label for="password"> Password:</label>
+            <input type="password" id="password" placeholder="enter a password">
+
+            <label for="telephone"> Telephone:</label>
+            <input type="tel" id="phone" placeholder="(256)callmenowforpizza" required>
+
+            <label for="Websites"> Website: *</label>
+            <input type="url" id="phone" placeholder="https://www.google.com">
+
+            <label for="age"> Age: *</label>
+            <input type="number" id="age" min="1" max="120" placeholder="20" required>
+
+            <label for="dob"> Date of Birth: *</label>
+            <input type="date" id="dob" required>
+
+            <label for="time"> Preferred Contact Time</label>
+            <input type="time" id="time">
+
+            <label for="color"> Favortie color: *</label>
+            <input type="color" id="color" value="#eebbc3">
+
+            <label for="range"> Intrest Lvl (1-10)</label>
+            <input type="range" id="range" min="1" max="10" value="5" required>
+
+            <label> Preferred Contact Method:</label>
+            <div>
+                <input type="radio" name="contactMethod" value="Email" checked>
+                    Email
+                <label>
+                    <input type="radio" name="contactMethod" value="phone">
+                    phone
+                </label>
+
+                <label>
+                    <input type="radio" name="contactMethod" value="text">
+                    Text 
+                </label>
+            </div>
+            <!-- checkBox-->
+            <div class="inline-options">
+                <input type="checkbox" name="service" value="Web Design">
+                    Web Desgin
+                <label>
+                    <input type="checkbox" name="service" value="Consulting">
+                    Consulting
+                </label>
+                
+                <label>
+                    <input type="checkbox" name="service" value="Other">
+                    Other 
+                </label>
+            </div>
+
+            <label for="topic">topic:</label>
+            <select id="topic">
+                <option value="General"> General Inquiry</option>
+                <option value="Support">Support</option>
+                <option value="Feedback"> Feedback</option>
+            </select>
+            <!--textera-->
+            <label for="message"> message: *</label>
+            <textarea id="message" rows="5" placeholder="your message" required></textarea>
+            <!--sumbitButton-->
+            <button type="submit"> send:</button>
+
+
+        </form>
+        
+    </section>
+
+
+    <footer style="background:#232946; color:#eebbc3; text-align:center; padding:1rem 0; border-radius:0 0 16px 16px;">
+        <p>Powered by artificial intelligence and the creativity of the user.</p>
+    </footer>
+
+</body>
+
+</html>
