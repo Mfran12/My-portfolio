@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Contact Me</title>
 </head>
 
@@ -22,11 +23,15 @@
                 <a href="https://earthroulette.com/" target="_blank" rel="noopener noreferrer"
                     style="color:#232946; text-decoration:none; font-weight:500;">Generate Places to Visit</a>
             </li>
-            </ul>
+
             <li class="style3 box4">
-                <a href="cssprojects/index.html" style="color:#232946; text-decoration:none; font-weight:500;">CSS
+                <a href="..cssprojects/index.html" target="_blank" rel="noopener noreferrer" style="color:#232946; text-decoration:none; font-weight:500;">CSS
                     Projects</a>
-                    <a href="ContactMes/index.html"></a>
+            </li>
+
+            <li class="style3 box4">
+                    <a href="..ContactMes/index.html" target="_blank" rel="noopener noreferrer" style="color:#232946; text-decoration:none; font-weight:500;">Contact Me</a>
+            </li>
         </nav>
     </header>
 
@@ -36,7 +41,7 @@
     </section>
 
     <section>
-        <form>
+        <form class="contact-form">
             <h2> Contact Me</h2>
             <label for="name"> Name</label>
             <input type="text" id="name" placeholder="Your Name" required>
@@ -73,7 +78,6 @@
                 <input type="radio" name="contactMethod" value="Email" checked>
                     Email
                 <label>
-
                     <input type="radio" name="contactMethod" value="phone">
                     phone
                 </label>
@@ -84,11 +88,10 @@
                 </label>
             </div>
             <!-- checkBox-->
-            <div>
+            <div class="inline-options">
                 <input type="checkbox" name="service" value="Web Design">
                     Web Desgin
                 <label>
-
                     <input type="checkbox" name="service" value="Consulting">
                     Consulting
                 </label>
