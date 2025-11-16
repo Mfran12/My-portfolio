@@ -1,56 +1,73 @@
-.body {
-  background-color: #232946;
-  color: #fffffe;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  margin: 0;
-  min-height: 100vh;
+/* HEADER / NAV / FOOTER */
+header, 
+nav, 
+footer {
+    background-color: #181B22; /* modern dark panel */
+    color: #E5E7EB; /* soft professional white */
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+}
+/* =====================
+   BODY
+===================== */
+/* BODY */
+body {
+    font-family: 'Georgia', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0F1117; /* modern dark background */
+    color: #E5E7EB;
 }
 
-.style1{
- background: #eebbc3; 
-border-radius:8px; 
-padding:0.5rem 1rem;
+/* MAIN */
+main {
+    background-color: #0F1117;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* =====================
+   STYLED BOXES
+===================== */
+.style1 {
+    background: #edf1f7;      /* var(--primary-blue) */
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
 }
 
-.style2fortext{
-    background: #121629;
-    text-align: center; 
-    font-size:1rem; 
-    margin:50px; 
-    color:#fffffe;
+.style2fortext {
+    background: #181B22;      /* var(--bg-secondary) */
+    text-align: center;
+    font-size: 1rem;
+    margin: 50px;
+    color: #E5E7EB;           /* var(--text-main) */
     letter-spacing: 2px;
 }
 
-.header {
-  text-align: center;
-  padding: 20px;
-  background: #232946;
-  color: #eebbc3;
-  border-radius: 16px 16px 0 0;
-}
+/* NAV*/
 
 nav a {
-    color: #23294d;
+    color:  #E5E7EB;           /* var(--primary-blue) */
     margin: 0 10px;
 }
 
 nav a:hover {
-    text-decoration: bold;
+    color: #93C5FD;           /* var(--soft-blue) */
+    text-decoration: none;
 }
 
-body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    /* different fonts */
-    margin: 0;
-    padding: 0;
-}
-
+/* =====================
+   SECTION
+===================== */
 section {
-    border: 1px #272EF5;
+    border: 1px #3B82F6;      /* var(--primary-blue) */
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
-    background: white;
+    background: #1F242C;      /* var(--surface) */
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
@@ -58,7 +75,9 @@ ul {
     list-style-position: inside;
 }
 
-/* Project 1: Buttons */
+/* =====================
+   BUTTONS
+===================== */
 button {
     padding: 10px 20px;
     border: none;
@@ -68,21 +87,23 @@ button {
 }
 
 .btn-hover:hover {
-    background: lightskyblue;
+    background: #60A5FA;      /* var(--primary-blue-hover) */
 }
 
 .btn-glow {
-    background: purple;
-    color: white;
+    background: #3B82F6;      /* var(--primary-blue) */
+    color: #E5E7EB;           /* var(--text-main) */
     border-radius: 5px;
     transition: box-shadow 0.3s;
 }
 
 .btn-glow:hover {
-    box-shadow: 0 0 10px purple;
+    box-shadow: 0 0 10px #3B82F6; /* var(--primary-blue) */
 }
 
-/* Project 2: Photo Gallery */
+/* =====================
+   PHOTO GALLERY
+===================== */
 .gallery {
     display: flex; /* Aligns images in a horizontal line */
     flex-wrap: wrap; /* Moves images to the next line if there isn't enough space */
@@ -118,6 +139,9 @@ button {
     opacity: 0.5; /* Makes the image slightly transparent */
 }
 
+/* =====================
+   QUOTE BOX
+===================== */
 /* Project 3: Styled Quote Box */
 .quote-section{
     text-align: center; /* Centers all text and elements inside the section */
@@ -125,7 +149,7 @@ button {
 }
 
 .quote-section h3{
-    color: #dad5ce; /* Changes the H3 text to a dark earthy brown */
+    color: #ffffff; /* Changes the H3 text to a white color */
     font-family: 'Merriweather', serif; /* Uses Merriweather and the classic serif font for a refined look */
     margin-bottom: 15px; /* Adds space below the heading */
     text-transform: uppercase; /* Makes all heading 3 letters uppercase */
@@ -133,80 +157,50 @@ button {
 }
 /* Main quote box styling */
 .quote-box{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Uses a clean, modern sans-serif font for the quote text */
+    font-family: 'Georgia', serif; /* Uses Georgia and the classic serif font for a refined look */
     font-style: italic; /* Italicizes text to make it look like an actual quote */
-    background-image: linear-gradient(135deg, #d9cbb4, #b7a68f), url("https://www.transparenttextures.com/patterns/scribble-light.png"); /* Combines a soft gradient with a subtle textured overlay */
+     background: #181B22;     /* var(--bg-secondary) */
+    color: #E5E7EB;           /* var(--text-main) */
     background-blend-mode: multiply; /* Blends the texture softly into the color */
-    padding: 50px 10px; /* Adds inner spacing around the quote */
-    border-left: 6px solid #534b43; /* Adds a thick, dark brown stripe on the left */
-    border-radius: 50px; /* Rounds the corners slightly for a softer look */
-    box-shadow: 0 4px 10px rgb(63, 54, 54); /* Adds a light shadow for depth */
-    color: #1b1b1a; /* Sets the quote text to a charcoal gray */
+    padding: 20px 30px; /* Adds inner spacing around the quote */
+    border-left: 6px solid#181B22; /* Adds a thick, modern darkm tripe on the left */
+    border-radius: 10px; /* Rounds the corners slightly for a softer look */
+    box-shadow: 0 4px 10px #93C5FD; /* Adds a light shadow for depth */
+    color: #ffffff; /* Sets the quote text to a white */
     transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .quote-box:hover{
     transform: translateY(-4px); /* Slightly lift the box when hovered */
-    box-shadow: 0 6px 14px gray; /* Makes the shadow deeper to enhance the lift */
-    background-image: linear-gradient(135deg, #b7a68f, #d9cbb4), url("https://www.transparenttextures.com/patterns/scribble-light.png"); /* Reverses the gradient colors for a dynamic effect */    
+    box-shadow: 0 6px 14px rgb(255, 254, 254); /* Makes the shadow deeper to enhance the lift */
+    background-image: linear-gradient(135deg, #b7a68f, #d9cbb4), url('https://www.transparenttextures.com/patterns/black-paper.png');
 }
 
 .quote-box cite{
-    display: block;
- /* Makes the citation appear on its own line */
+    display: block; /* Makes the citation appear on its own line */
     margin-top: 12px; /* adds space above the author's name */
     font-style: normal; /* Removes italics to contrast the quote text */
     font-weight: bold; /* Makes the author's name stand out by making it bold */
-    color: #324d3c; /*Sets a muted olive-green tone for the author name */
+    color: #ffffff; /*Sets a muted olive-green tone for the author name */
     text-align: right; /* Aligns the author's name to the right edge */
     letter-spacing: 0.5px; /* Adds small spacing between letters for balance */
 }
 
+/* =====================
+   BOXES
+===================== */
 .box1 {
-  display: inline-block;
-  vertical-align: top;
-  margin: 15px;
-  padding: 35px 25px;
-  width: 220px;
-  background:#eebbc3;
-  color: #f7f7f7;
-  font-size: 20px;
-  font-family: 'Segoe UI', 'Arial', sans-serif;
-  border-radius: 10px;
-  border: 2px solid #f7c873;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+    padding: 35px 25px;
+    width: 220px;
+    background: #181B22;
+    color: #fcfdff;
+    font-size: 20px;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    border-radius: 10px;
+    border: 2px solid #93C5FD; /* soft modern blue accent */
+    box-shadow: 0 4px 12px rgba(147, 197, 253, 0.2);
+    text-align: center;
 }
-
-.box2 {
-  display: inline-block;
-  vertical-align: top;
-  margin: 15px;
-  padding: 35px 25px;
-  width: 220px;
-  background:#eebbc3;
-  color: #f7f7f7;
-  font-size: 20px;
-  font-family: 'Segoe UI', 'Arial', sans-serif;
-  border-radius: 10px;
-  border: 2px solid #f7c873;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  text-align: center;
-}
-
-.box3 {
-  display: inline-block;
-  vertical-align: top;
-  margin: 15px;
-  padding: 20px 20px;
-  width: 220px;
-  background:#eebbc3;
-  color: #f7f7f7;
-  font-size: 20px;
-  font-family: 'Segoe UI', 'Arial', sans-serif;
-  border-radius: 10px;
-  border: 2px solid #f7c873;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  text-align: center;
-}
-
