@@ -6,97 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio About Me</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" type="image/svg+xml" href="img/faviconsM.jpg">
+    <link rel ="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="script" href="scripts/script.js">
 </head>
 
-<body class="body header">
-    <!-- Placeholder for Theme Toggle Button -->
-    <div id="themeToggleContainer"></div>
-    <div id="videoButtonContainer"></div>
-    <script src="index.js"></script>
-    <h1 class="header style1">My Personal Portfolio</h1>
-    <nav class="nav">
-        <h2 class="style1">Websites I Find Interesting</h2>
-        <ul class="style2">
-            <li class="style3 box1">
-                <a href="https://www.instagram.com/_m_ig_uel/" target="_blank" rel="noopener noreferrer"
-                    style="color:#232946; text-decoration:none; font-weight:500;">Where to know more about me</a>
-            </li>
-            <li class="style3 box2">
-                <a href="https://www.bestlaptop.deals/" target="_blank" rel="noopener noreferrer"
-                    style="color:#232946; text-decoration:none; font-weight:500;">Favorite Site for Laptops</a>
-            </li>
-            <li class="style3 box3">
-                <a href="https://earthroulette.com/" target="_blank" rel="noopener noreferrer"
-                    style="color:#232946; text-decoration:none; font-weight:500;">Generate Places to Visit</a>
-            </li>
-        </ul>
-        <li class="style3 box4">
-            <a href="cssprojects/index.html" style="color:#232946; text-decoration:none; font-weight:500;">CSS Projects</a>
-    </nav>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <button id="'toggleThemeBtn">toogle Theme</button>
+        <h1>My Personal Portfolio</h1>
+        <nav>
+            <ul>
+                <li class="box1"><a href="https://www.instagram.com/_m_ig_uel/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li class="box1"><a href="https://www.bestlaptop.deals/" target="_blank" rel="noopener noreferrer">Best Laptop Deals</a></li>
+                <li class="box1"><a href="https://earthroulette.com/" target="_blank" rel="noopener noreferrer">Earth Roulette</a></li>
+                <li class="box1"><a href="../My-portfolio-main/cssprojects/index.html" target="_blank" rel="noopener noreferrer">CSS Projects Home</a></li>
+                <li class="box1"><a href="../My-portfolio-main/Contactme/Index.html"  target="_blank" rel="noopener noreferrer">Contact me page</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="intro" style="text-align:center; padding:2rem;">
-        <h2 style="color:#d1c5fc;">Welcome to My Portfolio</h2>
-        <p style="max-width:600px; margin:0 auto; font-size:1.1rem; line-height:1.6;">
+    <!-- Intro Section -->
+    <section class="intro centerContent">
+        <h2>Welcome to My Portfolio</h2>
+        <p>
             Hello! I'm excited to share a bit about myself through this portfolio. Here, you'll find information about
-            my background, interests, and some of my favorite things. Feel free to explore and learn more about me!
+            my background, interests, and favorite things. Feel free to explore and learn more about me!
         </p>
     </section>
 
-
-    <main
-        style="max-width:900px; margin:2rem auto; padding:2rem; background:#121629; border-radius:16px; box-shadow:0 4px 24px rgba(35,41,70,0.10);">
-        <section class="aboutBox" style="margin-bottom:2rem;">
-            <img src="images/funnymeme.jpg" width="400" height="300"
-                style="display:block; margin:0 auto; border-radius:12px; box-shadow:0 2px 8px rgba(35,41,70,0.12);">
-            <h2 style="color:#d1c5fc;">Local Image of A funny meme about programming"</h2>
+    <!-- Main Content -->
+    <main class="centerContent mainContent">
+        <!-- Local Image Section -->
+        <section class="aboutBox">
+            <img src="images/funnymeme.jpg" alt="Funny programming meme" class="roundedImage">
+            <h2>Local Image: A funny programming meme</h2>
         </section>
 
-        <!-- Section for an online image -->
-        <section class="body">
+        <!-- Online Image Section -->
+        <section class="aboutBox">
             <h2>Online Image</h2>
             <img src="https://kids.mongabay.com/wp-content/uploads/2021/05/brown-bears.jpg"
-                alt="A mother bear and her cubs crossing through a lake" width="400" height="300">
+                 alt="A mother bear and her cubs crossing through a lake" class="roundedImage">
         </section>
 
-        <!-- Google Map embedded -->
-        <section>
-            <h2>A Favorite Place I Have Visited</h2>
-            <p><a href="https://www.google.com/maps/place/Gatlinburg,+TN+37738" target="_blank"
-                    rel="noopener noreferrer">Gatlinburg, TN</a></p>
+        <!-- Favorite Place Section -->
+        <section class="aboutBox">
+            <h2>Favorite Place I Have Visited</h2>
+            <p>
+                <a href="https://www.google.com/maps/place/Gatlinburg,+TN+37738" target="_blank" rel="noopener noreferrer">
+                    Gatlinburg, TN
+                </a>
+            </p>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103663.55894445984!2d-83.51016382059278!3d35.71425897759608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885953eacb08a589%3A0x4ab1d7ae7eb779a8!2sGatlinburg%2C%20TN%2037738!5e0!3m2!1sen!2sus!4v1757792315234!5m2!1sen!2sus"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" title="Gatlinburg, TN Map"></iframe>
+                class="mapFrame" title="Gatlinburg, TN Map">
+            </iframe>
         </section>
 
-        <!-- Other facts about me -->
-        <section
-            style="background:#232946; color:#eebbc3; border-radius:12px; padding:1.5rem; box-shadow:0 2px 8px rgba(35,41,70,0.12); margin-bottom:2rem;">
-            <h2 style="color:#d1c5fc; font-style:italic;">Who Am I?</h2>
+        <!-- About Me Section -->
+        <section class="aboutBox aboutMe">
+            <h2>Who Am I?</h2>
             <p>
                 I am from Russellville, AL, located in Franklin County. Born and raised here, I am proud to be the first
                 in my family to attend college.
             </p>
 
-            <h2 style="color:#d1c5fc;">My Hobbies</h2>
-            <ul style="list-style: disc inside; margin-bottom:1rem;">
+            <h2>My Hobbies</h2>
+            <ul>
                 <li>Exploring new topics and ideas</li>
                 <li>Playing video games</li>
-                <li>Learning to play different musical instruments</li>
+                <li>Learning musical instruments</li>
                 <li>Expanding my coding skills</li>
             </ul>
 
-            <h2 style="color:#d1c5fc; font-weight:bold;">My Goals</h2>
+            <h2>My Goals</h2>
             <p>
-                My goal is to master the fundamentals of coding and apply these skills in my future career. I am eager
-                to learn HTML in this class and hope to use my knowledge to help small businesses, teach others, and
-                create fun projects—including creative pranks with unique links.
+                My goal is to master the fundamentals of coding and apply these skills in my future career. I hope to use
+                my knowledge to help small businesses, teach others, and create fun projects—including creative pranks.
             </p>
         </section>
     </main>
 
-    <footer style="background:#232946; color:#eebbc3; text-align:center; padding:1rem 0; border-radius:0 0 16px 16px;">
+    <!-- Footer -->
+    <footer>
         <p>Powered by artificial intelligence and the creativity of the user.</p>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
+
+</html>
+
