@@ -1,120 +1,77 @@
+/* HEADER / NAV / FOOTER */
 header, 
 nav, 
 footer {
-    background-color: rgb(218, 209, 209);
-    /* black background ^^ */
-    color: white;
-    /* white text so it's readable ^^ */
+    background-color: #181B22; /* modern dark panel */
+    color: #E5E7EB; /* soft professional white */
     text-align: center;
-    /* centers text */
-    width: 100%;
-    /* ensures background stretches the screen */
-    height: auto;
-    /* making sure the height is correct */
-      background: #121629;
-  padding: 2rem 0;
-  box-shadow: 0 2px 8px rgba(35,41,70,0.15);
-}
-
-.box1,
-box2,
-box3
-box4
-box5{
-   display: inline-block;
-  vertical-align: top;
-  margin: 15px;
-  padding: 35px 25px;
-  width: 220px;
-  background:#eebbc3;
-  color: #f7f7f7;
-  font-size: 20px;
-  font-family: 'Segoe UI', 'Arial', sans-serif;
-  border-radius: 10px;
-  border: 2px solid #f7c873;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  text-align: center;
-}
-
-.style{
- display: inline-block;
-  vertical-align: top;
-  margin: 15px;
-  padding: 35px 25px;
-  width: 220px;
-  background:#eebbc3;
-  color: #f7f7f7;
-  font-size: 20px;
-  font-family: 'Segoe UI', 'Arial', sans-serif;
-  border-radius: 10px;
-  border: 2px solid #f7c873;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  text-align: center;
-}
-
-
-body {
-    font-family: 'Georgia', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    /* different fonts */
-    margin: 0;
-    padding: 0;
-    background-color: #232946;
-    color: #fffffe;
-   font-family: 'Segoe UI', Arial, sans-serif;
-    margin: 0;
-    min-height: 100vh;
-    background: #121629;
-  padding: 2rem 0;
-  box-shadow: 0 2px 8px rgba(35,41,70,0.15);
-}
-
-main {
     width: 100%;
     height: auto;
-    justify-content: center;
-    align-items: center;
-     display: flex;
-    /* enables flexbox */
-    flex-direction: column;
-    /* stack sections vertically */
-    align-items: center;
-    /* center items horiontally */
-    justify-content: center;
-    /* center items vertically */
-    text-align: center;
-    /* center text inside sections */
-    background: #121629;
-  padding: 2rem 0;
-  box-shadow: 0 2px 8px rgba(35,41,70,0.15);
-
+    padding: 10px 0;
 }
 
 nav a {
-    color: gold;
+    color: #E5E7EB;
     margin: 0 10px;
+    text-decoration: none;
 }
 
 nav a:hover {
-    text-decoration: bold;
+    color: #93C5FD; /* soft modern blue hover */
 }
 
+/* BODY */
+body {
+    font-family: 'Georgia', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0F1117; /* modern dark background */
+    color: #E5E7EB;
+}
+
+/* MAIN */
+main {
+    background-color: #0F1117;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* INTRO CARD / PANEL */
+.introBox {
+    border: 2px solid #3B82F6; /* modern blue */
+    padding: 20px;
+    margin: 20px auto;
+    width: 70%;
+    text-align: left;
+    background-color: #1F242C; 
+    color: #9CA3AF; /* professional muted text */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+
+/* CONTACT FORM */
 .contact-form {
-    background: rgb(88, 83, 83);
+    background: #1F242C;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
     width: 400px;
+    color: #E5E7EB;
 }
 
 .contact-form h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #3B82F6; /* modern blue */
 }
 
-.contact-form label {
+contact-form label {
     font-weight: bold;
     display: block;
     margin-top: 10px;
+    color: #9CA3AF;
 }
 
 .contact-form input,
@@ -123,7 +80,9 @@ nav a:hover {
     width: 100%;
     padding: 8px;
     border-radius: 6px;
-    border: 1px solid #ffffff;
+    border: 1px solid #3B82F6; 
+    background: #0F1117;
+    color: #E5E7EB;
 }
 
 .contact-form input[type="color"],
@@ -134,20 +93,67 @@ nav a:hover {
 .contact-form button {
     width: 100%;
     padding: 10px;
-    background-color: #f1f1f1;
+    background-color: #3B82F6; /* modern primary blue */
     border: none;
-    color: rgb(68, 139, 98);
+    color: white;
     font-size: 16px;
     border-radius: 5px;
     margin-top: 15px;
     cursor: pointer;
+    font-weight: bold;
 }
 
-.contact-form button:hover{
-    background-color: #234b4a;
+.contact-form button:hover {
+    background-color: #60A5FA; /* lighter modern blue */
 }
 
 .inline-options {
     display: flex;
     gap: 10px;
+}
+
+/* TABLE / RESULTS */
+#resultContainer {
+    margin-top: 30px;
+    background: #1F242C;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+    width: 80%;
+    max-width: 700px;
+    color: #E5E7EB;
+}
+
+#resultTable {
+    width:100%;
+    border-collapse: collapse;
+}
+
+#resultTable th, 
+#resultTable td {
+    border: 1px solid #3B82F6;
+    padding: 10px;
+    text-align: left;
+}
+
+#resultTable th {
+    background-color: #3B82F6;
+    color: white;
+}
+
+/* BOX 1 CARDS */
+.box1 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+    padding: 35px 25px;
+    width: 220px;
+    background: #181B22;
+    color: #E5E7EB;
+    font-size: 20px;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    border-radius: 10px;
+    border: 2px solid #93C5FD; /* soft modern blue accent */
+    box-shadow: 0 4px 12px rgba(147, 197, 253, 0.2);
+    text-align: center;
 }
